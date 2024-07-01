@@ -29,7 +29,5 @@ Test(Aritmetica, par_ou_impar)
 
 char *even_or_odd(int n1, int n2)
 {
-    // implementação ...
-
-    return "errado";
+    return (n1 + n2) % 2 == 0 ? "PAR" : "ÍMPAR";
 }

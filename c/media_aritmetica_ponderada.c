@@ -22,7 +22,6 @@ Test(Aritmetica, media_aritmetica_ponderada)
 
 float media_aritmetica_ponderada(float n1, int p1, float n2, int p2, float n3, int p3)
 {
-    // implementação
 
-    return 0;
+    return (n1 * p1 + n2 * p2 + n3 * p3) / (p1 + p2 + p3);
 }

@@ -1,5 +1,6 @@
 #include <criterion/criterion.h>
 #include <criterion/new/assert.h>
+#include <math.h>
 
 float square_area(float size);
 float hypotenuse(float height, float base);
@@ -26,34 +27,28 @@ Test(Aritmetica, pitagoras)
 
     cr_expect(ieee_ulp_eq(flt, hypotenuse(height, base), 10, 4));
     cr_expect(ieee_ulp_eq(flt, square_area(hypotenuse(height, base)), 100, 4));
-    cr_expect(ieee_ulp_eq(flt, square_area(height), 36, 4));
-    cr_expect(ieee_ulp_eq(flt, square_area(base), 64, 4));
+    cr_expect(ieee_ulp_eq(flt, square_area(height), 64, 4));
+    cr_expect(ieee_ulp_eq(flt, square_area(base), 36, 4));
     cr_expect(ieee_ulp_eq(flt, triangle_area(height, base), 24, 4));
 
     cr_expect(ieee_ulp_eq(flt, hypotenuse(height2, base2), 15.620499351813308, 4));
     cr_expect(ieee_ulp_eq(flt, square_area(hypotenuse(height2, base2)), 244, 4));
-    cr_expect(ieee_ulp_eq(flt, square_area(height2), 100, 4));
-    cr_expect(ieee_ulp_eq(flt, square_area(base2), 144, 4));
+    cr_expect(ieee_ulp_eq(flt, square_area(height2), 144, 4));
+    cr_expect(ieee_ulp_eq(flt, square_area(base2), 100, 4));
     cr_expect(ieee_ulp_eq(flt, triangle_area(height2, base2), 60, 4));
 }
 
 float square_area(float size)
 {
-    // implementação ...
-
-    return 0.0;
+    return size * size;
 }
 
 float hypotenuse(float height, float base)
 {
-    // implementação ...
-
-    return 0.0;
+    return sqrt(square_area(height) + square_area(base));
 }
 
 float triangle_area(float height, float base)
 {
-    // implementação ...
-
-    return 0.0;
+    return (height * base) / 2.0;
 }
