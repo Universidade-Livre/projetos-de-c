@@ -7,3 +7,5 @@ Após isso: `make run_c_test name=nome_do_teste`, por exemplo:
 ```
 make run_c_test name=media_simples
 ```
+
+Lista de exercícios: https://gist.github.com/Camilotk/5218c6b52997acbef38450c5e6460f11
