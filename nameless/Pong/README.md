@@ -7,7 +7,7 @@ Pong é o projeto final do grupo de estudos de C da UL (Universidade Brasileira 
 # Download
 
 
-Binários pra Linux e Windows [aqui](https://github.com/Every2/Pong/releases/tag/1.0.0)
+Binários pra Linux e Windows [aqui](https://github.com/Every2/Pong/releases/tag/1.0.1)
 
 
 # Dependencias
