@@ -20,7 +20,7 @@ $ ./bin/memory_game
 
 ## O que está implementado?
 - Histórico de Placar com SQLite3
-- Modo VIM para movimentar com h/j/k/l e marcar com leader \<espaço\>
+- Modo VIM (ativado com 'i') para movimentar com h/j/k/l e marcar com leader \<espaço\>, mas como sai do modo VIM?
 - Músicas e Efeitos Sonoros
 
 ## Licença
